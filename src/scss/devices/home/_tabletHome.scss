@@ -1,0 +1,20 @@
+@media (min-width: $tabletVersion) {
+    .home{
+        #language, #education{
+            section{
+                width: 100%;
+                justify-content: space-between;
+                @include flexRow
+            }
+            h4{
+                font-size: 20px;
+            }
+            small{
+                font-size: 15px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@media (min-width: $mobileVersion) {
+    .about{
+        width: 85%;
+        background-color: $box;
+        border-radius: 13px;
+        padding: 2%;
+        h1,h3,small,p{
+            color: #DDE6ED;
+          }
+        img{
+            width: 50%;
+            border-radius: 13px;
+        }
+        figure{
+            @include flexCol(3vh);
+            @include flexCenter;
+        }
+        figcaption{
+            @include flexCol(2vh);
+            text-align: center;
+        }
+    }
+    .blok{
+        padding-bottom: 3vh
+    }
+    .download{
+        @include flexCenter;
+        background-color: $box;
+        width: 100%;
+        padding: 9%;
+        border-radius: 10px;
+        a{
+            text-decoration: none;
+            color: $p;
+        }
+    }
+}

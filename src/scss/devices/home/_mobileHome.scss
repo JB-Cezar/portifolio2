@@ -1,0 +1,78 @@
+@media (min-width: $mobileVersion) {
+    .home{
+        @include flexCol(3vh);
+        @include flexCenter;
+        padding-top: 3vh;
+        background-color: $mainColor;
+        .bigBlok{
+            @include flexCol(3vh);
+            @include flexCenter;
+        }
+        h1,h4,h3,small,p{
+            color: $p;
+        }
+        .blok{
+            @include flexCol(3vh);
+            align-items: center;
+            padding-bottom: 2vh;
+            padding-top: 2vh;
+        }
+        article{
+            @include flexCol(3vh);
+            @include flexCenter;
+            background-color: $box;
+            padding: 3%;
+            width: 90%;
+            border-radius: 10px;
+            h3{
+                background-color: $mainColor; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+                width: 100%;
+                font-size: 4vh;
+            }
+            section{
+                @include flexCol(5vh);
+                @include flexCenter;
+                p{
+                    text-align: center;
+                }
+                aside{
+                    @include flexCol(1vh);
+                    @include flexCenter;
+                }
+            }
+        }
+        #language, #education{
+            section{
+                width: 100%;
+                justify-content: space-between;
+                @include flexRow
+            }
+            h4{
+                font-size: 12px;
+                text-align: center;
+            }
+            small{
+                font-size: 10px;
+            }
+            p{
+                font-size: 11px;
+            }
+        }
+        figure{   
+            display: flex;
+            align-items: center;
+            width: 100%;
+            small{
+                height: 4px;
+                background: linear-gradient(90deg, #27374D 0%,transparent 100%);
+            }
+        } 
+        img{
+            width: 10%;
+        } 
+    }
+}

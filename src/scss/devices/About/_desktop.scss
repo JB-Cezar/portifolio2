@@ -1,0 +1,18 @@
+@media (min-width: $desktopVersion) {
+    .about{
+        padding: 3%;
+        figure{
+            display: block;
+        }
+        figcaption{
+            display: block;
+        }
+        .profile-image {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            width: 10%;
+        } 
+    }
+}

@@ -1,0 +1,11 @@
+@media (min-width: $desktopVersion) {
+    .home{
+        .bigBlok{
+            @include flexRow(1vh);
+            align-items: normal;
+            #skills{
+                width: 80%;
+            }
+        }
+    }
+}
